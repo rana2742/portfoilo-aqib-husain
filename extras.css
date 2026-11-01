@@ -180,3 +180,11 @@ html[data-theme="pastel"] .terminal { border-color: #b9a6ff; }
 
 /* the tilted ticker is slightly wider than the viewport by design; clip it so the page never scrolls sideways */
 main { overflow-x: clip; }
+
+/* AWS learning strip + inline links */
+.aws-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin-top: 54px; padding-top: 22px; border-top: 1px solid var(--edge); }
+.aws-strip-label { font: 500 11px var(--mono); letter-spacing: 1px; color: var(--blue); }
+.aws-strip a, .timeline-link { font-size: 13px; font-weight: 700; color: var(--ink); border-bottom: 2px solid var(--blue); padding-bottom: 1px; }
+.aws-strip a:hover, .timeline-link:hover { color: var(--blue); }
+.timeline-link { font-size: 12px; white-space: nowrap; }
+.contact-links { flex-wrap: wrap; }

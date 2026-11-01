@@ -112,6 +112,7 @@
   goto <section>  jump the page: about, stack, work, journey, contact
   ls / cat <file> browse files (tip: ls -a)
   whoami, date, history, clear
+  badges          my AWS Skill Builder profile and community
   secret          a small personal note
 
 4 secrets are hidden in this terminal. Keys: Up/Down = history, Tab = autocomplete, Ctrl+L = clear.`,
@@ -139,7 +140,7 @@ Type "goto work" to jump to the project cards with live demos.`,
     achievements: `MILESTONES
 • Technical Team Leader — AWS Student Builder Group, BZU
 • Technical Instructor — Bitops Technologies Community
-• Winning participant — AWS GameDay
+• Winning team participant — AWS GameDay (GoCloud × AWS SBG BZU Multan)
 • Computer Engineering — BZU
 Keep learning. Keep building. Keep sharing.`,
 
@@ -155,6 +156,11 @@ Delivery    Amplify serves the site through Amazon CloudFront, a global CDN
 Security    HTTPS by default + security headers (customHttp.yml)
 Backend     None, by design: a static site needs no servers to patch.
 Type "deploy" to watch the pipeline.`,
+
+    badges: `AWS LEARNING
+Skill Builder: skillsprofile.skillbuilder.aws/user/aqibhussain/certification-badges
+Community:     AWS Student Builder Group, BZU Multan (instagram.com/aws_sbg_bzu)
+GameDay:       winning team participant, organized by GoCloud × AWS SBG BZU Multan`,
 
     whoami: `uid=1000(builder) gid=1000(cloud) groups=aws,linux,docker,kubernetes,community
 shell=curiosity   status=always learning`,
@@ -203,7 +209,7 @@ Nice try. A good DevOps engineer keeps everything in Git — this site is safe a
   ];
 
   const COMMAND_NAMES = [
-    "help", "about", "skills", "projects", "achievements", "contact", "aws", "deploy",
+    "help", "about", "skills", "projects", "achievements", "contact", "aws", "badges", "deploy",
     "secret", "whoami", "date", "history", "clear", "ls", "ls -a", "theme",
     ...THEMES.map(t => `theme ${t}`),
     ...Object.keys(FILES).map(f => `cat ${f}`), "cat motto.txt", "cat .hidden",
